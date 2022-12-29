@@ -1,0 +1,21 @@
+---
+title: ODC
+---
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/styles.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="odc-logo">otherdimensional club</h1>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <small>odc is made by {{ site.author }} - &copy; {{ site.copyrightYear }}</small>
+</body>
+</html>
