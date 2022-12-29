@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "toc.md",
+                "file": "home.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "toc.md",
+                "file": "home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "toc.md",
+                "file": "home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "toc.md"
+                "file": "home.md"
               }
             }
           }
@@ -148,9 +148,9 @@
   },
   "active": "24dce2c060996450",
   "lastOpenFiles": [
+    "toc.md",
     "home.md",
     "heart.md",
-    "feed/home.md",
-    "toc.md"
+    "feed/home.md"
   ]
 }

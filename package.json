@@ -14,6 +14,7 @@
     "@11ty/eleventy": "^1.0.2",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-footnote": "^3.0.3",
-    "markdown-it-obsidian": "^1.1.0"
+    "markdown-it-obsidian": "^1.1.0",
+    "title-case": "^3.0.3"
   }
 }
