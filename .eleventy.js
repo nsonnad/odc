@@ -1,14 +1,36 @@
-const markdownIt = require("markdown-it");
-const miObs = require("markdown-it-obsidian")();
-
 module.exports = function (config) {
-  let options = {
-    html: true
+      
+  const markdownIt = require('markdown-it');
+  const markdownItOptions = {
+      html: true,
+      linkify: true
   };
+  
+  const md = markdownIt(markdownItOptions)
+  .use(require('markdown-it-footnote'))
+  .use(require('markdown-it-attrs'))
+  .use(function(md) {
+      // Recognize Mediawiki links ([[text]])
+      md.linkify.add("[[", {
+          validate: /^\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/,
+          normalize: match => {
+              const parts = match.raw.slice(2,-2).split("|");
+              parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
+              match.text = (parts[1] || parts[0]).trim();
+              match.url = `/feed/${parts[0].trim()}/`;
+          }
+      })
+  })
+  
+  config.addFilter("markdownify", string => {
+      return md.render(string)
+  })
 
-  let markdownLib = markdownIt(options).use(miObs);
-
-  config.setLibrary("md", markdownLib);
+  config.setLibrary('md', md);
+  
+  config.addCollection("feed", function (collection) {
+      return collection.getFilteredByGlob(["feed/**/*.md", "index.md"]);
+  });
 
   config.addPassthroughCopy('assets');
 
