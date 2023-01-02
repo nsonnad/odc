@@ -11,8 +11,15 @@ title: ODC
 </head>
 <body>
   <header>
-    <h1 class="odc-logo">otherdimensional club</h1>
+    <a href="/"><h1 class="odc-logo">otherdimensional club</h1></a>
   </header>
+  <nav>
+    <ul>
+    {%- for n in nav -%}
+      <li><a href="/{{ n.slug }}">{{ n.name }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </nav
   <main>
     {{ content | safe }}
   </main>

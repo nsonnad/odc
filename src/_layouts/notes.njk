@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+{{ content | safe }}
+
+{%- for post in collections.feed -%}
+<div class="feed-item">
+    <h3>{{ post.data.title }}</h3>
+    <div class="feed-content">
+        {{ post.data.content | safe }}
+    </div>
+</div>
+{%- endfor -%}

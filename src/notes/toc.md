@@ -1,4 +1,6 @@
-# toc
+---
+title: toc
+---
 
 - [[home]]
 - [[heart]]

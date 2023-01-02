@@ -28,8 +28,8 @@ module.exports = function (config) {
 
   config.setLibrary('md', md);
   
-  config.addCollection("feed", function (collection) {
-      return collection.getFilteredByGlob(["feed/**/*.md", "index.md"]);
+  config.addCollection("notes", function (collection) {
+      return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
   });
 
   config.addPassthroughCopy('assets');
