@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "home.md",
+                "file": "music gear.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "home.md",
+                "file": "music gear.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "home.md",
+                "file": "music gear.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "home.md"
+                "file": "music gear.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "24dce2c060996450",
   "lastOpenFiles": [
-    "toc.md",
+    "prophet rev2.md",
+    "music gear.md",
+    "books.md",
+    "wayne krantz improvisers os.md",
     "home.md",
+    "toc.md",
     "heart.md",
     "index.md",
     "feed/home.md"

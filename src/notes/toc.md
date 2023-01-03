@@ -1,6 +1,0 @@
----
-title: toc
----
-
-- [[home]]
-- [[heart]]

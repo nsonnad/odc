@@ -15,6 +15,7 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-obsidian": "^1.1.0",
+    "slugify": "^1.6.5",
     "title-case": "^3.0.3"
   }
 }

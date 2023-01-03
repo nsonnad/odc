@@ -1,3 +1,4 @@
+const slugify = require('slugify');
 const markdownIt = require('markdown-it');
 const markdownItOptions = {
     html: true,
@@ -17,7 +18,7 @@ module.exports = function (config) {
                 const parts = match.raw.slice(2,-2).split("|");
                 parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, "");
                 match.text = (parts[1] || parts[0]).trim();
-                match.url = `/feed/${parts[0].trim()}/`;
+                match.url = `/notes/${slugify(parts[0].trim())}/`;
             }
         })
     })
@@ -29,7 +30,7 @@ module.exports = function (config) {
   config.setLibrary('md', md);
   
   config.addCollection("notes", function (collection) {
-      return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
+      return collection.getFilteredByGlob(["./src/feed/**/*.md", "index.md"]);
   });
 
   config.addPassthroughCopy('assets');
