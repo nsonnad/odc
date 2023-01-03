@@ -30,7 +30,7 @@ module.exports = function (config) {
   config.setLibrary('md', md);
   
   config.addCollection("notes", function (collection) {
-      return collection.getFilteredByGlob(["./src/feed/**/*.md", "index.md"]);
+      return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
   });
 
   config.addPassthroughCopy('assets');
