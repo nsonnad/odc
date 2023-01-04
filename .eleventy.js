@@ -34,6 +34,7 @@ module.exports = function (config) {
   });
 
   config.addPassthroughCopy('assets');
+  config.addPassthroughCopy('admin');
 
   return {
     dir: {
