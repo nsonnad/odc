@@ -5,3 +5,5 @@ layout: base.njk
 <h2>{{ title }}</h2>
 
 {{ content | safe }}
+
+<p class="feed-item-date">– {{ date | htmlDateString }}, &copy;{{ site.author }}</p>

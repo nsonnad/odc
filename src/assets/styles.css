@@ -4,12 +4,12 @@
     --color-logo: pink;
     --color-accent-1: aquamarine;
     --color-accent-2: #401f56;
-    --color-accent-3: hsla(176, 95%, 28%, 1);
+    --color-accent-3: hsla(176, 95%, 26%, 1);
     --font-mono: monaco,Consolas,Lucida Console,monospace;
 }
 
 html {
-    max-width: 80ch;
+    max-width: 70ch;
     /* larger spacing on larger screens, very small spacing on tiny screens */
     padding: calc(1vmin + .5rem);
     /* shorthand for margin-left/margin-right */
@@ -22,7 +22,7 @@ html {
 
 body {
     background-color: var(--color-bg);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 img {
@@ -36,6 +36,17 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
 
 .odc-logo {
     color: var(--color-logo);
@@ -86,7 +97,7 @@ div.feed-item .feed-item-title a {
 }
 
 
-div.feed-item p.feed-item-date {
+p.feed-item-date {
     margin: 2px 0;
     padding: 0;
     color: var(--color-light-gray);
