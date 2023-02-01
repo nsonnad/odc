@@ -4,15 +4,19 @@
         "slug": "./"
     },
     {
-        "name": "projects",
-        "slug": "projects"
-    },
-    {
         "name": "feed",
         "slug": "feed"
     },
     {
+        "name": "creations",
+        "slug": "creations"
+    },
+    {
         "name": "notes",
         "slug": "notes"
+    },
+    {
+        "name": "???",
+        "slug": "what"
     }
 ]

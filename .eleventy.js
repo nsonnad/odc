@@ -5,6 +5,12 @@ const markdownItOptions = {
     linkify: true
 };
 
+const formatDateOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+};
+
 module.exports = function (config) {
 
   const md = markdownIt(markdownItOptions)
@@ -38,7 +44,7 @@ module.exports = function (config) {
   });
 
   config.addFilter('htmlDateString', (dateObj) => {
-      return dateObj.toLocaleDateString("en-US");
+      return dateObj.toLocaleDateString("en-US", formatDateOptions);
   });
 
   config.addPassthroughCopy('src/assets');

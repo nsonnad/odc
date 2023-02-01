@@ -2,15 +2,19 @@
 layout: base.njk
 ---
 
-<h2>The feed.</h2>
+<h4>feed~from our brains to ur veins~~</h4>
 
 {%- for post in collections.feed | reverse -%}
 <div class="feed-item">
-    <h3 class="wtf">{{ post.data.title }}</h3>
-    <h4>{{ post.date | htmlDateString }}</h4>
+    <h2 class="feed-item-title">
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
     <div class="feed-content">
         {{ post.templateContent | safe }}
     </div>
+    <br />
+    <p class="feed-item-date">– {{ post.date | htmlDateString }}</p>
+    <hr class="item-separator" />
 </div>
 {%- endfor -%}
 
