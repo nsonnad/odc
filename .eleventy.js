@@ -4,9 +4,9 @@ const markdownItOptions = {
     html: true,
     linkify: true
 };
-  
+
 module.exports = function (config) {
-      
+
   const md = markdownIt(markdownItOptions)
     .use(require('markdown-it-footnote'))
     .use(require('markdown-it-attrs'))
@@ -22,21 +22,34 @@ module.exports = function (config) {
             }
         })
     })
-  
+
   config.addFilter("markdownify", string => {
       return md.render(string)
   })
 
   config.setLibrary('md', md);
-  
+
   config.addCollection("notes", function (collection) {
       return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
   });
 
-  config.addPassthroughCopy('assets');
+  config.addCollection("feed", function (collection) {
+      return collection.getFilteredByGlob(["./src/feed/**/*.md"]);
+  });
+
+  config.addFilter('htmlDateString', (dateObj) => {
+      return dateObj.toLocaleDateString("en-US");
+  });
+
+  config.addPassthroughCopy('src/assets');
   config.addPassthroughCopy('admin');
 
   return {
+    templateFormats: [
+        "md",
+        "njk"
+    ],
+
     dir: {
       input: './src',
       output: './build',

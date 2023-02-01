@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+<h2>The feed.</h2>
+
+{%- for post in collections.feed | reverse -%}
+<div class="feed-item">
+    <h3 class="wtf">{{ post.data.title }}</h3>
+    <h4>{{ post.date | htmlDateString }}</h4>
+    <div class="feed-content">
+        {{ post.templateContent | safe }}
+    </div>
+</div>
+{%- endfor -%}
+

@@ -1,11 +1,11 @@
 [
     {
         "name": "home",
-        "slug": "/"
+        "slug": "./"
     },
     {
         "name": "projects",
-        "slug": "projects.html"
+        "slug": "projects"
     },
     {
         "name": "feed",
