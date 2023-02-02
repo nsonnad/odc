@@ -1,3 +1,7 @@
+/* */
+/* VARIABLES */
+/* */
+
 :root {
     --color-bg: hsla(317, 100%, 94%, 1);
     --color-light-gray: #586e75;
@@ -5,10 +9,17 @@
     --color-accent-1: aquamarine;
     --color-accent-2: #401f56;
     --color-accent-3: hsla(176, 95%, 26%, 1);
+    --color-bg-lightened: hsla(317, 100%, 97%, 1);
     --font-mono: monaco,Consolas,Lucida Console,monospace;
 }
 
+/* */
+/* GLOBAL */
+/* */
+
 html {
+    margin: 0;
+    padding: 0;
     max-width: 70ch;
     /* larger spacing on larger screens, very small spacing on tiny screens */
     padding: calc(1vmin + .5rem);
@@ -21,6 +32,8 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--color-bg);
     font-size: 1.3rem;
 }
@@ -88,6 +101,23 @@ nav ul li a {
     padding: .2em 1em .2em 0;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1.4em 0;
+    padding: 0;
+}
+
+video {
+    margin-bottom: 10px;
+}
+
+/* */
+/* SECTIONS */
+/* */
+
 div.feed-item .feed-item-title {
     margin-bottom: 2px;
 }
@@ -104,17 +134,38 @@ p.feed-item-date {
     font-size: 1.2rem;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1.4em 0;
-    padding: 0;
+div.creations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: row dense;
 }
 
-video {
-    margin-bottom: 10px;
+div.creations-item {
+    background-color: var(--color-bg-lightened);
+    padding: 12px;
+    box-shadow: 6px 6px 0px black;
+    border: 1px solid black;
+}
+
+div.creations img {
+    display: block;
+    background-size: cover;
+}
+
+div.creations .creations-item-title {
+    color: var(--color-accent-3);
+    margin: 12px 0 0 0;
+    font-weight: bold;
+}
+
+div.creations .creations-item-description {
+    color: var(--color-light-gray);
+    margin: 2px 0;
+}
+
+div.creations a {
+    color: var(--color-accent-2);
 }
 
 /*hr.item-separator {*/

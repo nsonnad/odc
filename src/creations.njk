@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<h2>creations..</h2>
+
+<div class="creations">
+{%- for d in creations | reverse -%}
+    <div class="creations-item">
+        <a href="{{ d.link }}">
+            <img src="/assets/{{ d.imgPath }}" />
+            <p class="creations-item-title">{{ d.title }}</p>
+            <p class="creations-item-description">{{ d.description }}</p>
+        </a>
+    </div>
+{%- endfor -%}
+</div>
+
