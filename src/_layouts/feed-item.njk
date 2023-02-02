@@ -2,8 +2,10 @@
 layout: base.njk
 ---
 
-<h2>{{ title }}</h2>
+<div class="feed-item-page">
+  <h2>{{ title }}</h2>
 
-{{ content | safe }}
+  {{ content | safe }}
 
-<p class="feed-item-date">– {{ date | htmlDateString }}, &copy;{{ site.author }}</p>
+  <p class="feed-item-date">– {{ date | htmlDateString }}, &copy;{{ site.author }}</p>
+</div>

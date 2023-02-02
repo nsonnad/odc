@@ -2,43 +2,10 @@
   {
     "title": "Container 7-11",
     "date": "2022-10-01",
-    "description": "Live album by Discatur, a fully improvised techno act",
+    "what": "Live Album",
+    "who": "Discatur",
+    "description": "A fully improvised set of techno; pay as you wish",
     "imgPath": "2023/not711.png",
     "link": "https://discatur.bandcamp.com/album/discatur-live-container-7-11"
-  },
-  {
-    "title": "Rhythm of the Night",
-    "date": "2022-12-25",
-    "description": "Holiday album by Dancefloor Symphony, featuring classic dance hits",
-    "imgPath": "2023/rhythm.png",
-    "link": "https://dancefloorsymphony.com/rhythm-of-the-night"
-  },
-  {
-    "title": "Electric Dreams",
-    "date": "2022-08-15",
-    "description": "Electronic music compilation album by various artists",
-    "imgPath": "2023/electric.png",
-    "link": "https://music.apple.com/album/electric-dreams/1534266989"
-  },
-  {
-    "title": "The Beat Goes On",
-    "date": "2022-06-01",
-    "description": "Pop and dance album by up-and-coming artist, Beatchaser",
-    "imgPath": "2023/beat.png",
-    "link": "https://beatchaser.com/the-beat-goes-on"
-  },
-  {
-    "title": "Rave Culture",
-    "date": "2022-11-11",
-    "description": "Album exploring the sounds of the 90s rave scene, by DJ Retro",
-    "imgPath": "2023/rave.png",
-    "link": "https://djretro.com/rave-culture"
-  },
-  {
-    "title": "Night Moves",
-    "date": "2022-09-09",
-    "description": "Downtempo and ambient album by Night Owl, perfect for late night listening",
-    "imgPath": "2023/nightmoves.png",
-    "link": "https://nightowl.bandcamp.com/album/night-moves"
   }
 ]

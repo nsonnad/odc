@@ -2,10 +2,11 @@
 layout: base.njk
 ---
 
-<p>feed~from our brains to ur veins~~</p>
+<h1>feed~ from our brains to your veins</h1>
 
 <hr />
 
+<div class="feed">
 {%- for post in collections.feed | reverse -%}
 <div class="feed-item">
     <h2 class="feed-item-title">
@@ -19,4 +20,5 @@ layout: base.njk
     <hr class="item-separator" />
 </div>
 {%- endfor -%}
+</div>
 

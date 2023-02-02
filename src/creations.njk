@@ -6,11 +6,20 @@ layout: base.njk
 
 <div class="creations">
 {%- for d in creations | reverse -%}
-    <div class="creations-item">
+    <div class="creations-item shadow-card">
         <a href="{{ d.link }}">
             <img src="/assets/{{ d.imgPath }}" />
             <p class="creations-item-title">{{ d.title }}</p>
-            <p class="creations-item-description">{{ d.description }}</p>
+            <p class="creations-item-description">
+            <span class="creations-item-what">
+                {{ d.what }}
+            </span>
+            by
+            <span class="creations-item-who">
+                {{ d.who }}:
+            </span>
+            {{ d.description }}
+            </p>
         </a>
     </div>
 {%- endfor -%}

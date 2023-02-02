@@ -114,9 +114,36 @@ video {
     margin-bottom: 10px;
 }
 
+pre {
+    tab-size: 2;
+    background: #57686c;
+    color: var(--color-bg-lightened);
+    padding: 20px;
+    white-space: pre-wrap;
+}
+
+/* */
+/* UTILITIES */
+/* */
+div.shadow-card {
+    background-color: var(--color-bg-lightened);
+    padding: 12px;
+    box-shadow: 6px 6px 0px black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
 /* */
 /* SECTIONS */
 /* */
+
+div.feed img {
+    background-color: var(--color-bg-lightened);
+    padding: 12px;
+    box-shadow: 6px 6px 0px black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
 
 div.feed-item .feed-item-title {
     margin-bottom: 2px;
@@ -134,6 +161,14 @@ p.feed-item-date {
     font-size: 1.2rem;
 }
 
+div.feed-item-page img {
+    background-color: var(--color-bg-lightened);
+    padding: 12px;
+    box-shadow: 6px 6px 0px black;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
 div.creations {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -142,10 +177,6 @@ div.creations {
 }
 
 div.creations-item {
-    background-color: var(--color-bg-lightened);
-    padding: 12px;
-    box-shadow: 6px 6px 0px black;
-    border: 1px solid black;
 }
 
 div.creations img {
@@ -166,6 +197,14 @@ div.creations .creations-item-description {
 
 div.creations a {
     color: var(--color-accent-2);
+}
+
+span.creations-item-what {
+    color: var(--color-accent-2);
+}
+
+span.creations-item-who {
+    color: var(--color-accent-1);
 }
 
 /*hr.item-separator {*/
