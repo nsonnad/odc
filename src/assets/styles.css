@@ -146,7 +146,7 @@ div.feed img {
 }
 
 div.feed-item .feed-item-title {
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 div.feed-item .feed-item-title a {
@@ -159,6 +159,10 @@ p.feed-item-date {
     padding: 0;
     color: var(--color-light-gray);
     font-size: 1.2rem;
+}
+
+div.feed-item-image {
+    margin-bottom: 20px;
 }
 
 div.feed-item-page img {
@@ -205,6 +209,16 @@ span.creations-item-what {
 
 span.creations-item-who {
     color: var(--color-accent-1);
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--color-bg-lightened);
+    padding: 12px;
+    box-shadow: 6px 6px 0px black;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 /*hr.item-separator {*/

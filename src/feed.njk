@@ -12,10 +12,16 @@ layout: base.njk
     <h2 class="feed-item-title">
         <a href="{{ post.url }}">{{ post.data.title }}</a>
     </h2>
+    {% if post.data.featuredImg %}
+    <div class="feed-item-image">
+        <img src="{{ post.data.featuredImg }}" />
+    </div>
+    {% endif %}
+    {% if post.data.feedInline %}
     <div class="feed-content">
         {{ post.templateContent | safe }}
     </div>
-    <br />
+    {% endif %}
     <p class="feed-item-date">– {{ post.date | htmlDateString }}</p>
     <hr class="item-separator" />
 </div>

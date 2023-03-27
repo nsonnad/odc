@@ -5,7 +5,7 @@ layout: base.njk
 <h2>creations..</h2>
 
 <div class="creations">
-{%- for d in creations | reverse -%}
+{%- for d in creations -%}
     <div class="creations-item shadow-card">
         <a href="{{ d.link }}">
             <img src="/assets/{{ d.imgPath }}" />

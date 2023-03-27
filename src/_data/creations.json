@@ -1,5 +1,14 @@
 [
   {
+    "title": "Data is Plural (the podcast)",
+    "date": "2023-03-27",
+    "what": "Podcast theme music",
+    "who": "qfwfq",
+    "description": "A custom theme song for Data is Plural (the podcast)",
+    "imgPath": "/creations/dip-podcast.jpg",
+    "link": "https://podcast.data-is-plural.com/"
+  },
+  {
     "title": "Container 7-11",
     "date": "2022-10-01",
     "what": "Live Album",

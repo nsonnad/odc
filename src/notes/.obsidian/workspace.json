@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8553ced4ab6d9466",
+        "id": "8c8877d71d0fe735",
         "type": "tabs",
         "children": [
           {
-            "id": "24dce2c060996450",
+            "id": "b6a3d342af4f9a29",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24dce2c060996450",
+  "active": "b6a3d342af4f9a29",
   "lastOpenFiles": [
+    "pitching albums to record labels.md",
     "Notes todo.md",
     "index.md",
     "music gear.md",
