@@ -6,18 +6,20 @@
   <link rel="stylesheet" href="/assets/styles.css"/>
 </head>
 <body>
-  <header>
-    <a href="/"><h1 class="odc-logo">otherdimensional club</h1></a>
-  </header>
-  <nav>
-    <ul>
-    {%- for n in nav -%}
-      <li><a href="/{{ n.slug }}">{{ n.name }}</a></li>
-    {%- endfor -%}
-    </ul>
-  </nav
-  <main>
-    {{ content | safe }}
-  </main>
+  <div class="container">
+    <header>
+      <a href="/"><h1 class="odc-logo">otherdimensional club</h1></a>
+    </header>
+    <nav>
+      <ul>
+      {%- for n in nav -%}
+        <li><a href="/{{ n.slug }}">{{ n.name }}</a></li>
+      {%- endfor -%}
+      </ul>
+    </nav>
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
 </body>
 </html>

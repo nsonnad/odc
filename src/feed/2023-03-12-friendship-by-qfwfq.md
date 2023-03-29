@@ -6,7 +6,7 @@ published: true
 ---
 
 
-<video width="576" height="960" controls loop>
+<video controls loop>
   <source src="/assets/2023/friendship.mp4" type="video/mp4">
 </video>
 
