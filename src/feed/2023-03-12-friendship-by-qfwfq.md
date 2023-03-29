@@ -1,8 +1,8 @@
 ---
 date: 2023-03-12
 title: '"friendship", a song by qfwfq'
-layout: feed-item
 feedInline: true
+published: true
 ---
 
 

@@ -39,9 +39,15 @@ module.exports = function (config) {
       return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
   });
 
-  config.addCollection("feed", function (collection) {
-      return collection.getFilteredByGlob(["./src/feed/**/*.md"]);
+  config.addCollection("published", (collection) => {
+    return collection
+      .getFilteredByTags("feed")
+      .filter((post) => post.data.published);
   });
+
+  //config.addCollection("feed", function (collection) {
+      //return collection.getFilteredByGlob(["./src/feed/**/*.md"]);
+  //});
 
   config.addFilter('htmlDateString', (dateObj) => {
       return dateObj.toLocaleDateString("en-US", formatDateOptions);

@@ -2,8 +2,8 @@
 date: 2023-02-03
 title: Increasingly specific AI art prompts what happens?
 featuredImg: "/assets/2023/plantmusic/12-gently.png"
-layout: feed-item
 feedInline: false
+published: true
 ---
 
 <h2 style="text-align: center;">~ 1 ~</h2>
