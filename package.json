@@ -11,11 +11,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.1",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-obsidian": "^1.1.0",
     "slugify": "^1.6.5",
     "title-case": "^3.0.3"
+  },
+  "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^2.0.5"
   }
 }
