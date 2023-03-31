@@ -9,7 +9,7 @@ layout: base.njk
 <div class="thoughts">
     {%- for thought in collections.thoughts | reverse -%}
         <div class="thought">
-            <a href="#{{thought.fileSlug}}">{{ thought.date | htmlDateTimeString }} </a>
+            <a href="#{{thought.fileSlug}}">{{ thought.date | htmlDateString }} </a>
             {{ thought.templateContent | safe }}
         </div>
     {%- endfor -%}
