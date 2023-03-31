@@ -7,9 +7,17 @@ const markdownItOptions = {
 
 const formatDateOptions = {
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: 'numeric'
 };
+
+const formatTimeOptions = {
+  hour12: false,
+  hour: 'numeric',
+  minute: '2-digit'
+};
+
+const dateTimeOptions = {...formatDateOptions, ...formatTimeOptions };
 
 module.exports = function (config) {
 
@@ -39,6 +47,10 @@ module.exports = function (config) {
       return collection.getFilteredByGlob(["./src/notes/**/*.md", "index.md"]);
   });
 
+  config.addCollection("thoughts", function (collection) {
+      return collection.getFilteredByGlob(["./src/thoughts/**/*.md"]);
+  });
+
   config.addCollection("published", (collection) => {
     return collection
       .getFilteredByTags("feed")
@@ -51,6 +63,10 @@ module.exports = function (config) {
 
   config.addFilter('htmlDateString', (dateObj) => {
       return dateObj.toLocaleDateString("en-US", formatDateOptions);
+  });
+
+  config.addFilter('htmlDateTimeString', (dateObj) => {
+      return dateObj.toLocaleString("en-US", dateTimeOptions);
   });
 
   config.addPassthroughCopy('src/assets');

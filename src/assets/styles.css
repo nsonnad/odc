@@ -93,13 +93,14 @@ nav {
     font-family: var(--font-mono);
     font-size: 1rem;
     display: flex;
-    /* text-transform: uppercase; */
+    justify-content: start;
+    flex-direction: row;
 }
 
 
 nav ul {
     margin: 0;
-    padding: 5px;
+    padding: 0;
     list-style-type: none;
     display: flex;
 }
@@ -235,6 +236,23 @@ video {
     box-sizing: border-box;
 }
 
+/* THOUGHTS */
+div.thoughts {
+  margin-top: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+div.thought {
+    margin: 40px 0;
+}
+
+div.thought a {
+    text-decoration: none;
+    border-bottom: 1px dashed violet;
+}
+
+/* RESPONSIVE */
 @media (min-width: 320px) and (max-width: 960px) {
     html {
         margin: 0px 4%;

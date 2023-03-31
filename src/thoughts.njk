@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+<h2>thoughts~</h2>
+
+<div class="thoughts">
+    {%- for thought in collections.thoughts | reverse -%}
+        <div class="thought">
+            <a href="#{{thought.fileSlug}}">{{ thought.date | htmlDateTimeString }} </a>
+            {{ thought.templateContent | safe }}
+        </div>
+    {%- endfor -%}
+</div>
