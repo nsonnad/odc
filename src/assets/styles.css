@@ -252,6 +252,11 @@ div.thought a {
     border-bottom: 1px dashed violet;
 }
 
+span.note-pretitle {
+    color: var(color-light-gray);
+    opacity: 0.4;
+}
+
 /* RESPONSIVE */
 @media (min-width: 320px) and (max-width: 960px) {
     html {

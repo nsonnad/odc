@@ -71,6 +71,7 @@ module.exports = function (config) {
 
   config.addPassthroughCopy('src/assets');
   config.addPassthroughCopy('admin');
+  config.addPassthroughCopy({ "src/favicon": "/" });
 
   return {
     templateFormats: [

@@ -16,6 +16,10 @@
         "slug": "thoughts"
     },
     {
+        "name": "notes",
+        "slug": "notes"
+    },
+    {
         "name": "find",
         "slug": "find"
     }

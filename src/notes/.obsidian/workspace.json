@@ -11,8 +11,12 @@
             "id": "b6a3d342af4f9a29",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Spirit Island.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Spirit Island.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Spirit Island.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Spirit Island.md"
+              }
             }
           }
         ]
@@ -141,6 +149,7 @@
   "active": "b6a3d342af4f9a29",
   "lastOpenFiles": [
     "pitching albums to record labels.md",
+    "Spirit Island.md",
     "Notes todo.md",
     "index.md",
     "music gear.md",
