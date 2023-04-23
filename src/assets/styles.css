@@ -4,7 +4,7 @@
 
 :root {
     --color-bg: hsla(317, 100%, 94%, 1);
-    --color-text: hsla(0, 0%, 16%, 1);
+    --color-text: hsla(0, 0%, 18%, 1);
     --color-light-gray: #586e75;
     --color-logo: pink;
     --color-accent-1: aquamarine;
@@ -66,6 +66,14 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
+table td {
+    padding: 10px;
+}
+
+table tr:nth-child(odd){background-color: hsla(270, 100%, 94%, 1);}
+table tr:nth-child(even){background-color: hsla(370, 100%, 94%, 1);}
+table tr:last-child{border-bottom: none;}
 
 th {
     text-align: left;

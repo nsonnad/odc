@@ -33,3 +33,5 @@ TK
 
 - "Jump" by Trickster – [view on TikTok](https://www.tiktok.com/@otherdimensionalclub/video/7225327550417915179)
 
+
+tags: [[music production]]
