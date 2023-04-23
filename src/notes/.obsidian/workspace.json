@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2e2f9ce1db510eed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dirtywave M8 Tracker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spirit Island.md",
+                "file": "Dirtywave M8 Tracker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spirit Island.md",
+                "file": "Dirtywave M8 Tracker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spirit Island.md"
+                "file": "Dirtywave M8 Tracker.md"
               }
             }
           }
@@ -146,10 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6a3d342af4f9a29",
+  "active": "2e2f9ce1db510eed",
   "lastOpenFiles": [
-    "pitching albums to record labels.md",
     "Spirit Island.md",
+    "Dirtywave M8 Tracker.md",
+    "board games.md",
+    "pitching albums to record labels.md",
     "Notes todo.md",
     "index.md",
     "music gear.md",

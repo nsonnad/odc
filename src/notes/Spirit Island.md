@@ -6,4 +6,4 @@ Anyway, an the politics of this game could be its own whole essay. Maybe I'll wr
 
 But for now, I just want to leave notes on strategy for those starting out playing.
 
-tags: [[ board games]] | [[ colonialism ]]
+tags: [[games]] | [[colonialism]]
