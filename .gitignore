@@ -1,4 +1,4 @@
 build
 node_modules
 .DS_Store
-src/notes/.obsidian/
+./src/notes/.obsidian/
